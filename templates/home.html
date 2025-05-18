@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bejaia Region Fire Dataset Form</title>
+</head>
+<body>
+  <h2>Bejaia Region Fire Dataset Input</h2>
+  <form action="" method="POST">
+
+    <label>Temperature (°C): <input type="number" name="Temperature" step="0.1" required></label><br><br>
+    <label>Relative Humidity (%): <input type="number" name="RH" step="0.1" required></label><br><br>
+    <label>Wind Speed (km/h): <input type="number" name="Ws" step="0.1" required></label><br><br>
+    <label>Rain (mm): <input type="number" name="Rain" step="0.1" required></label><br><br>
+
+    <label>FFMC: <input type="number" name="FFMC" step="0.1" required></label><br><br>
+    <label>DMC: <input type="number" name="DMC" step="0.1" required></label><br><br>
+    <label>DC: <input type="number" name="DC" step="0.1" required></label><br><br>
+    <label>ISI: <input type="number" name="ISI" step="0.1" required></label><br><br>
+    <label>BUI: <input type="number" name="BUI" step="0.1" required></label><br><br>
+
+    <label>Class:
+      <input type="number" name="Classes" step="0.1" required>
+    </label><br><br>
+     <label>Region: <input type="number" name="Region" step="0.1" required></label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <h1>The result of the prediction is: {{ result }}</h1>
+</body>
+</html>
